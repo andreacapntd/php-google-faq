@@ -27,12 +27,22 @@ $database = [
 
 ];
 
-
- var_dump($database);
-
+?>
 
 
+<div style="margin: 0 auto;">
 
+  <?php
+   foreach ($database as $questions => $answers) {
+     ?>
+      <h1><?php echo $questions; ?></h1>
+     <?php
+     foreach ($answers as $answer) {
+       ?>
+        <p style="font-size:20px;"><?php echo $answer; ?></p>
+       <?php
+     };
+   };
+  ?>
 
-
- ?>
+</div>
